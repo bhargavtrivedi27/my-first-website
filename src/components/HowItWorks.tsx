@@ -1,5 +1,6 @@
 import React from 'react';
 import { Search, Calendar, CreditCard, Mail } from 'lucide-react';
+import EarlyAccessForm from './EarlyAccessForm';
 
 const HowItWorks: React.FC = () => {
   const steps = [
@@ -99,9 +100,9 @@ const HowItWorks: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/25">
-            Start Creating Memories Today
-          </button>
+          <div className="max-w-md mx-auto">
+            <EarlyAccessForm />
+          </div>
         </div>
       </div>
     </section>

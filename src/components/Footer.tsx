@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Instagram, Facebook, Twitter, Linkedin, ArrowRight } from 'lucide-react';
+import EarlyAccessForm from './EarlyAccessForm';
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -26,9 +27,9 @@ const Footer: React.FC = () => {
           <p className="text-gray-300 font-montserrat text-lg mb-8 max-w-2xl mx-auto">
             Start surprising your loved ones today with unforgettable dining experiences from anywhere in the world
           </p>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/25">
-            Make a day with a small surprise
-          </button>
+          <div className="max-w-md mx-auto">
+            <EarlyAccessForm />
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">

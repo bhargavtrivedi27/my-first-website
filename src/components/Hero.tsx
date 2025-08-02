@@ -1,5 +1,6 @@
 import React from 'react';
-import { Play, Star, Users } from 'lucide-react';
+import { Star, Users, ArrowRight, Globe, Heart, Zap } from 'lucide-react';
+import EarlyAccessForm from './EarlyAccessForm';
 
 const Hero: React.FC = () => {
   return (
@@ -26,10 +27,25 @@ const Hero: React.FC = () => {
               Give surprises to your loved ones from anywhere, choices of their favorite places at your fingertips
             </p>
 
+            {/* Key Benefits */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl">
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                <Globe className="h-5 w-5 text-blue-400" />
+                <span className="text-white font-montserrat text-sm">Global Reach</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                <Heart className="h-5 w-5 text-purple-400" />
+                <span className="text-white font-montserrat text-sm">Instant Surprise</span>
+              </div>
+              <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-3">
+                <Zap className="h-5 w-5 text-yellow-400" />
+                <span className="text-white font-montserrat text-sm">Easy Booking</span>
+              </div>
+            </div>
+
+            {/* Early Access Form */}
             <div className="mb-8">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-blue-500/25">
-                Make a day with a small surprise
-              </button>
+              <EarlyAccessForm />
             </div>
 
             {/* Social Proof */}
@@ -66,24 +82,57 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Video Component */}
+          {/* Visual Content */}
           <div className="relative">
-            <div className="relative bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-1 shadow-2xl">
-              <div className="bg-gray-900 rounded-2xl overflow-hidden aspect-video relative group cursor-pointer">
+            {/* Interactive Feature Showcase */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
+                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
+                  <Globe className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">50+ Countries</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Book restaurants worldwide</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
+                <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mb-4">
+                  <Heart className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Instant Joy</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Surprise delivered in minutes</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-green-600/20 to-blue-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
+                <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-4">
+                  <Zap className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">3-Step Process</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Search, book, surprise</p>
+              </div>
+              
+              <div className="bg-gradient-to-br from-yellow-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
+                <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center mb-4">
+                  <ArrowRight className="h-6 w-6 text-white" />
+                </div>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Free Transport</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Round-trip cab included</p>
+              </div>
+            </div>
+            
+            {/* Main Hero Image */}
+            <div className="mt-6 relative bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-1 shadow-2xl">
+              <div className="bg-gray-900 rounded-2xl overflow-hidden aspect-video relative">
                 <img 
                   src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="TreatConnect Demo Video"
+                  alt="Happy family enjoying surprise dinner"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center group-hover:bg-black/50 transition-all duration-300">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-6 group-hover:scale-110 transition-all duration-300">
-                    <Play className="h-12 w-12 text-white ml-1" fill="currentColor" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <p className="text-white font-montserrat text-sm bg-black/50 backdrop-blur-sm rounded-lg p-3">
+                      "The surprise dinner you booked made our anniversary unforgettable!" - Sarah & Mike
+                    </p>
                   </div>
-                </div>
-                <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white font-montserrat text-sm bg-black/50 backdrop-blur-sm rounded-lg p-3">
-                    Watch how TreatConnect helps you surprise loved ones from anywhere in the world
-                  </p>
                 </div>
               </div>
             </div>
