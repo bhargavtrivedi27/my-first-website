@@ -1,36 +1,35 @@
 import React from 'react';
-import { Search, Calendar, CreditCard, Mail } from 'lucide-react';
-import EarlyAccessForm from './EarlyAccessForm';
+import { Search, Calendar, CreditCard, CheckCircle } from 'lucide-react';
 
 const HowItWorks: React.FC = () => {
   const steps = [
     {
       id: 1,
-      title: "Search & Discover",
-      description: "Search restaurants by country and zip code",
-      details: "Browse through our curated selection of restaurants worldwide. Filter by cuisine, price range, ambiance, and special dietary requirements to find the perfect match.",
+      title: "Search & Find",
+      description: "Find healthcare providers by location and specialty",
+      details: "Browse our network of verified healthcare professionals. Filter by specialty, insurance accepted, patient ratings, and availability to find your perfect match.",
       icon: Search,
     },
     {
       id: 2,
-      title: "Book & Arrange",
-      description: "Book table for recipient(s) including cab service",
-      details: "Select your preferred date and time, specify the number of guests, and customize the experience with special requests. Our complimentary round-trip cab service ensures seamless transportation.",
+      title: "Book Appointment",
+      description: "Schedule your appointment instantly online",
+      details: "Choose your preferred date and time from real-time availability. Add your medical concerns, insurance information, and any special requirements for a personalized experience.",
       icon: Calendar,
     },
     {
       id: 3,
-      title: "Secure Payment",
-      description: "Save payment details for complete order processing",
-      details: "Complete your booking with our bank-grade security. Your payment information is encrypted and stored safely for future convenience while ensuring complete transaction protection.",
+      title: "Secure Check-in",
+      description: "Complete intake forms and verify insurance",
+      details: "Streamline your visit with digital intake forms, insurance verification, and secure payment processing. All your information is HIPAA-compliant and encrypted.",
       icon: CreditCard,
     },
     {
       id: 4,
-      title: "Confirmation & Surprise",
-      description: "Receive email and text confirmations for both parties",
-      details: "Get instant confirmation with all booking details. Add a personal note that will be delivered with the surprise. Both you and your loved one receive notifications at the perfect time.",
-      icon: Mail,
+      title: "Receive Quality Care",
+      description: "Attend your appointment and get follow-up care",
+      details: "Enjoy your appointment with confidence. Receive appointment reminders, access visit summaries, and get seamless follow-up care coordination through our platform.",
+      icon: CheckCircle,
     },
   ];
 
@@ -46,7 +45,7 @@ const HowItWorks: React.FC = () => {
             How It Works
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 font-montserrat max-w-3xl mx-auto">
-            Four simple steps to create unforgettable moments for your loved ones
+            Four simple steps to access quality healthcare when and where you need it
           </p>
         </div>
 
@@ -70,15 +69,15 @@ const HowItWorks: React.FC = () => {
                   </div>
 
                   {/* Card */}
-                  <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-700 group-hover:border-blue-500/50 dark:group-hover:border-blue-400/50">
+                  <div className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border border-gray-200 dark:border-gray-700 group-hover:border-green-500/50 dark:group-hover:border-green-400/50">
                     <div className="text-center mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                      <div className="w-12 h-12 bg-gradient-to-br from-green-600/20 to-blue-600/20 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <IconComponent className="h-6 w-6 text-green-600 dark:text-green-400" />
                       </div>
                       <h3 className="font-montserrat text-xl font-bold text-gray-900 dark:text-white mb-2">
                         {step.title}
                       </h3>
-                      <p className="text-blue-600 dark:text-blue-400 font-montserrat font-semibold text-sm mb-3">
+                      <p className="text-green-600 dark:text-green-400 font-montserrat font-semibold text-sm mb-3">
                         {step.description}
                       </p>
                     </div>
@@ -90,7 +89,7 @@ const HowItWorks: React.FC = () => {
                   {/* Mobile Connection Line */}
                   {index < steps.length - 1 && (
                     <div className="lg:hidden flex justify-center my-6">
-                      <div className="w-0.5 h-8 bg-gradient-to-b from-blue-600 to-purple-600"></div>
+                      <div className="w-0.5 h-8 bg-gradient-to-b from-green-600 to-blue-600"></div>
                     </div>
                   )}
                 </div>
@@ -100,9 +99,9 @@ const HowItWorks: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <div className="max-w-md mx-auto">
-            <EarlyAccessForm />
-          </div>
+          <button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Start Your Healthcare Journey
+          </button>
         </div>
       </div>
     </section>

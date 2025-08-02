@@ -17,35 +17,30 @@ const Hero: React.FC = () => {
           {/* Content */}
           <div className="text-center lg:text-left">
             <h1 className="font-montserrat text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              Treats for
+              Connect with
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400 block">
-                loved ones
+                Healthcare
               </span>
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-8 font-montserrat max-w-2xl">
-              Give surprises to your loved ones from anywhere, choices of their favorite places at your fingertips
+              Find trusted healthcare providers, book appointments instantly, and access quality medical care from anywhere
             </p>
 
             {/* Key Benefits */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl">
               <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                <Globe className="h-5 w-5 text-blue-400" />
-                <span className="text-white font-montserrat text-sm">Global Reach</span>
+                <Globe className="h-5 w-5 text-green-400" />
+                <span className="text-white font-montserrat text-sm">Nationwide Network</span>
               </div>
               <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                <Heart className="h-5 w-5 text-purple-400" />
-                <span className="text-white font-montserrat text-sm">Instant Surprise</span>
+                <Heart className="h-5 w-5 text-red-400" />
+                <span className="text-white font-montserrat text-sm">Quality Care</span>
               </div>
               <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-3">
                 <Zap className="h-5 w-5 text-yellow-400" />
-                <span className="text-white font-montserrat text-sm">Easy Booking</span>
+                <span className="text-white font-montserrat text-sm">Instant Booking</span>
               </div>
-            </div>
-
-            {/* Early Access Form */}
-            <div className="mb-8">
-              <EarlyAccessForm />
             </div>
 
             {/* Social Proof */}
@@ -62,23 +57,30 @@ const Hero: React.FC = () => {
               
               <div className="flex items-center space-x-2">
                 <Users className="h-5 w-5 text-blue-400" />
-                <span className="text-white font-montserrat">Trusted by 10,000+ families worldwide</span>
+                <span className="text-white font-montserrat">Trusted by 50,000+ patients nationwide</span>
               </div>
             </div>
 
             {/* Testimonial Snippets */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
               {[
-                { name: "Sarah C.", text: "Made my mom's birthday unforgettable!" },
-                { name: "David R.", text: "Flawless service, beautiful interface." },
-                { name: "Priya P.", text: "Perfect for surprising loved ones remotely." },
-                { name: "James W.", text: "My kids were absolutely thrilled!" }
+                { name: "Sarah M.", text: "Found an excellent cardiologist in minutes!" },
+                { name: "David R.", text: "Seamless booking, professional service." },
+                { name: "Maria L.", text: "Finally, healthcare that works for busy families." },
+                { name: "James K.", text: "The best medical platform I've used!" }
               ].map((testimonial, index) => (
                 <div key={index} className="bg-white/10 backdrop-blur-sm rounded-lg p-4 border border-white/20">
                   <p className="text-sm text-gray-300 mb-2 font-montserrat">"{testimonial.text}"</p>
                   <p className="text-xs text-blue-400 font-montserrat font-semibold">- {testimonial.name}</p>
                 </div>
               ))}
+            </div>
+
+            {/* Primary CTA */}
+            <div className="mt-8">
+              <button className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+                Find Healthcare Providers
+              </button>
             </div>
           </div>
 
@@ -87,35 +89,35 @@ const Hero: React.FC = () => {
             {/* Interactive Feature Showcase */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
-                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-4">
                   <Globe className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-montserrat text-lg font-bold text-white mb-2">50+ Countries</h3>
-                <p className="text-gray-300 font-montserrat text-sm">Book restaurants worldwide</p>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Nationwide Network</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Access providers across all states</p>
               </div>
               
-              <div className="bg-gradient-to-br from-purple-600/20 to-pink-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
-                <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mb-4">
+              <div className="bg-gradient-to-br from-red-600/20 to-pink-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
+                <div className="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center mb-4">
                   <Heart className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Instant Joy</h3>
-                <p className="text-gray-300 font-montserrat text-sm">Surprise delivered in minutes</p>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Quality Care</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Verified, licensed professionals</p>
               </div>
               
               <div className="bg-gradient-to-br from-green-600/20 to-blue-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
-                <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
                   <Zap className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-montserrat text-lg font-bold text-white mb-2">3-Step Process</h3>
-                <p className="text-gray-300 font-montserrat text-sm">Search, book, surprise</p>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Instant Booking</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Schedule appointments 24/7</p>
               </div>
               
               <div className="bg-gradient-to-br from-yellow-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
-                <div className="w-12 h-12 bg-yellow-500 rounded-xl flex items-center justify-center mb-4">
-                  <ArrowRight className="h-6 w-6 text-white" />
+                <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mb-4">
+                  <Users className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Free Transport</h3>
-                <p className="text-gray-300 font-montserrat text-sm">Round-trip cab included</p>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Patient Support</h3>
+                <p className="text-gray-300 font-montserrat text-sm">24/7 assistance available</p>
               </div>
             </div>
             
@@ -123,14 +125,14 @@ const Hero: React.FC = () => {
             <div className="mt-6 relative bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-1 shadow-2xl">
               <div className="bg-gray-900 rounded-2xl overflow-hidden aspect-video relative">
                 <img 
-                  src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Happy family enjoying surprise dinner"
+                  src="https://images.pexels.com/photos/4173251/pexels-photo-4173251.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  alt="Professional healthcare consultation"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
                   <div className="absolute bottom-4 left-4 right-4">
                     <p className="text-white font-montserrat text-sm bg-black/50 backdrop-blur-sm rounded-lg p-3">
-                      "The surprise dinner you booked made our anniversary unforgettable!" - Sarah & Mike
+                      "TreatConnect helped me find the perfect specialist for my condition. Excellent service!" - Dr. Sarah Chen, Patient
                     </p>
                   </div>
                 </div>

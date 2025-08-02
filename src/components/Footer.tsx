@@ -22,14 +22,14 @@ const Footer: React.FC = () => {
         {/* CTA Section */}
         <div className="text-center mb-16 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-8 border border-blue-500/20">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-4">
-            Ready to Create Magic?
+            Ready to Transform Your Healthcare Experience?
           </h2>
           <p className="text-gray-300 font-montserrat text-lg mb-8 max-w-2xl mx-auto">
-            Start surprising your loved ones today with unforgettable dining experiences from anywhere in the world
+            Join thousands of patients who trust TreatConnect for their healthcare needs. Find providers, book appointments, and take control of your health journey.
           </p>
-          <div className="max-w-md mx-auto">
-            <EarlyAccessForm />
-          </div>
+          <button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Find Healthcare Providers Now
+          </button>
         </div>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
             <div className="mb-6">
               <h3 className="font-montserrat text-2xl font-bold mb-2">TreatConnect</h3>
               <p className="text-gray-400 font-montserrat text-sm">
-                Connecting hearts through memorable dining experiences, no matter the distance.
+                Connecting patients with quality healthcare providers nationwide, making healthcare accessible and convenient.
               </p>
             </div>
             
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-montserrat text-lg font-semibold mb-6">Company</h4>
             <ul className="space-y-3">
-              {['About Us', 'How It Works', 'Careers', 'Press Kit', 'Blog'].map((item) => (
+              {['About Us', 'How It Works', 'For Providers', 'Careers', 'Blog'].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-montserrat text-lg font-semibold mb-6">Support</h4>
             <ul className="space-y-3">
-              {['Contact Support', 'Partner Restaurants', 'Help Center', 'Safety Guidelines', 'Community'].map((item) => (
+              {['Patient Support', 'Provider Network', 'Help Center', 'Privacy & Security', 'Insurance Guide'].map((item) => (
                 <li key={item}>
                   <a
                     href="#"
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-montserrat text-lg font-semibold mb-6">Stay Connected</h4>
             <p className="text-gray-400 font-montserrat text-sm mb-4">
-              Get surprise ideas and special offers delivered to your inbox
+              Get health tips, provider updates, and platform news delivered to your inbox
             </p>
             
             <form onSubmit={handleNewsletterSubmit} className="mb-6">
