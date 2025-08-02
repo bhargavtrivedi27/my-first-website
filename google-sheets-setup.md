@@ -72,8 +72,10 @@ function doGet(e) {
 ## Step 4: Update the React Component
 
 1. Open `src/components/EarlyAccessForm.tsx`
-2. Find the line with `const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';`
-3. Replace `YOUR_SCRIPT_ID` with your actual script ID from step 3
+2. Find the line with `const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxvKF2D8lMqJ5H7Zp9XwE3RtY8UiO6PsA4BcV1NmL0QwE9RtY8UiO6PsA4BcV1NmL0QwE/exec';`
+3. Replace the entire URL with your actual Web App URL from step 3
+
+**IMPORTANT**: The current URL in the code is a placeholder. You MUST replace it with your actual Google Apps Script Web App URL for the form to work.
 
 ## Step 5: Test the Integration
 

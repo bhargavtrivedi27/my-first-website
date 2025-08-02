@@ -19,16 +19,9 @@ const HowItWorks: React.FC = () => {
     },
     {
       id: 3,
-      title: "We Handle Everything",
-      description: "Sit back while we orchestrate the perfect surprise",
-      details: "From restaurant confirmation to arranging complimentary transportation, we manage every detail. Your loved one receives all the information they need for a seamless experience.",
-      icon: CreditCard,
-    },
-    {
-      id: 4,
       title: "Joy Delivered",
       description: "Watch the magic unfold as your surprise creates lasting memories",
-      details: "Your loved one enjoys an unforgettable dining experience, complete with the knowledge that someone special was thinking of them. You'll receive updates and photos to share in their joy.",
+      details: "We handle everything from restaurant confirmation to complimentary transportation. Your loved one enjoys an unforgettable experience while you receive updates to share in their joy.",
       icon: CheckCircle,
     },
   ];
@@ -45,7 +38,7 @@ const HowItWorks: React.FC = () => {
             How It Works
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 font-montserrat max-w-3xl mx-auto">
-            Creating moments of joy is simple with TreatConnect. Four easy steps to surprise someone special with an unforgettable dining experience.
+            Creating moments of joy is simple with TreatConnect. Three easy steps to surprise someone special with an unforgettable dining experience.
           </p>
         </div>
 
@@ -53,7 +46,7 @@ const HowItWorks: React.FC = () => {
           {/* Connection Lines */}
           <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 transform -translate-y-1/2"></div>
           
-          <div className="grid lg:grid-cols-4 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8">
             {steps.map((step, index) => {
               const IconComponent = step.icon;
               return (
@@ -96,12 +89,6 @@ const HowItWorks: React.FC = () => {
               );
             })}
           </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-            Start Spreading Joy Today
-          </button>
         </div>
       </div>
     </section>

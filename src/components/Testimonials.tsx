@@ -174,11 +174,6 @@ const Testimonials: React.FC = () => {
           </div>
 
           {/* Auto-play indicator */}
-          <div className="text-center mt-4">
-            <p className="text-sm text-gray-500 dark:text-gray-400 font-montserrat">
-              {isAutoPlaying ? 'Auto-advancing every 5 seconds' : 'Auto-play paused'}
-            </p>
-          </div>
         </div>
       </div>
     </section>

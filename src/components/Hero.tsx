@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             </p>
 
             {/* Key Benefits */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto lg:mx-0">
               <div className="flex items-center space-x-2 bg-white/10 backdrop-blur-sm rounded-lg p-3">
                 <Globe className="h-5 w-5 text-green-400" />
                 <span className="text-white font-montserrat text-sm">50+ Countries</span>
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
             </div>
 
             {/* Social Proof */}
-            <div className="flex flex-col sm:flex-row items-center lg:items-start gap-6 mb-8">
+            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-6 mb-8">
               <div className="flex items-center space-x-2">
                 <div className="flex space-x-1">
                   {[...Array(5)].map((_, i) => (
@@ -87,15 +87,15 @@ const Hero: React.FC = () => {
               
               <div className="bg-gradient-to-br from-green-600/20 to-blue-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
                 <div className="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center mb-4">
-                  <Zap className="h-6 w-6 text-white" />
+                  <Heart className="h-6 w-6 text-white" />
                 </div>
-                <h3 className="font-montserrat text-lg font-bold text-white mb-2">3-Step Process</h3>
-                <p className="text-gray-300 font-montserrat text-sm">Simple and effortless</p>
+                <h3 className="font-montserrat text-lg font-bold text-white mb-2">Easy Process</h3>
+                <p className="text-gray-300 font-montserrat text-sm">Simple 3-step booking</p>
               </div>
               
               <div className="bg-gradient-to-br from-yellow-600/20 to-orange-600/20 backdrop-blur-sm rounded-2xl p-6 border border-white/20 hover:scale-105 transition-all duration-300">
                 <div className="w-12 h-12 bg-purple-500 rounded-xl flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-white" />
+                  <Zap className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="font-montserrat text-lg font-bold text-white mb-2">Free Transport</h3>
                 <p className="text-gray-300 font-montserrat text-sm">Complimentary cab included</p>
@@ -106,17 +106,11 @@ const Hero: React.FC = () => {
             <div className="mt-6 relative bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-1 shadow-2xl">
               <div className="bg-gray-900 rounded-2xl overflow-hidden aspect-video relative">
                 <img 
-                  src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                  alt="Happy family enjoying a surprise dinner together at an elegant restaurant"
+                  src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                  alt="Elegant restaurant table setting with beautiful ambiance for a surprise dinner"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent">
-                  <div className="absolute bottom-4 left-4 right-4">
-                    <p className="text-white font-montserrat text-sm bg-black/50 backdrop-blur-sm rounded-lg p-3">
-                      "My daughter surprised me with the most beautiful dinner through TreatConnect. The joy on her face was priceless!" - Maria Santos, Barcelona
-                    </p>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
               </div>
             </div>
           </div>

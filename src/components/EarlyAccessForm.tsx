@@ -43,11 +43,11 @@ const EarlyAccessForm: React.FC = () => {
   const submitToGoogleSheets = async (data: FormData): Promise<boolean> => {
     try {
       // Google Apps Script Web App URL - Replace with your actual deployment URL
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxvKF2D8lMqJ5H7Zp9XwE3RtY8UiO6PsA4BcV1NmL0QwE9RtY8UiO6PsA4BcV1NmL0QwE/exec';
       
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
-        mode: 'no-cors', // Required for Google Apps Script
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -55,12 +55,12 @@ const EarlyAccessForm: React.FC = () => {
           name: data.name,
           email: data.email,
           timestamp: new Date().toISOString(),
-          source: 'TreatConnect Landing Page'
+          source: 'TreatConnect Landing Page',
+          userAgent: navigator.userAgent
         })
       });
 
-      // Since we're using no-cors mode, we can't read the response
-      // We'll assume success if no error is thrown
+      // With no-cors mode, we assume success if no error is thrown
       return true;
     } catch (error) {
       console.error('Error submitting to Google Sheets:', error);
