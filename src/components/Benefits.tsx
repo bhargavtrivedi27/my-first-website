@@ -5,26 +5,26 @@ const Benefits: React.FC = () => {
   const benefits = [
     {
       id: 1,
-      title: "Access Care Anywhere",
-      description: "Location shouldn't limit your healthcare options. Connect with top-rated specialists and primary care providers nationwide, whether you're at home or traveling.",
+      title: "Global Reach, Local Love",
+      description: "Distance shouldn't limit your ability to show you care. Send delightful dining experiences to loved ones anywhere in the world, from cozy local bistros to Michelin-starred restaurants.",
       icon: Globe,
     },
     {
       id: 2,
-      title: "Never Miss Important Care",
-      description: "Your health can't wait. Get same-day appointments, urgent care consultations, and preventive screenings exactly when you need them most.",
+      title: "Perfect Timing, Every Time",
+      description: "Surprise them when they least expect it or plan ahead for special occasions. Our flexible booking system ensures your gesture of love arrives at exactly the right moment.",
       icon: Calendar,
     },
     {
       id: 3,
-      title: "Personalized Healthcare Journey",
-      description: "Every patient is unique. Our platform matches you with providers who understand your specific needs, medical history, and healthcare preferences.",
+      title: "Curated for Connection",
+      description: "Every restaurant in our network is carefully selected for ambiance, quality, and the ability to create memorable moments. We don't just book tables – we craft experiences.",
       icon: Heart,
     },
     {
       id: 4,
-      title: "Family-Centered Care",
-      description: "Healthcare that works for your whole family. Manage appointments for children, elderly parents, and yourself all in one secure, easy-to-use platform.",
+      title: "Complete Care Package",
+      description: "Your loved ones deserve the full experience. That's why every booking includes complimentary round-trip transportation, so they can focus entirely on enjoying your thoughtful surprise.",
       icon: Gift,
     },
   ];
@@ -40,7 +40,7 @@ const Benefits: React.FC = () => {
             Why Choose TreatConnect?
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 font-montserrat max-w-3xl mx-auto">
-            Experience healthcare the way it should be - accessible, reliable, and patient-centered
+            More than just restaurant bookings – we're your partner in creating unforgettable moments of joy and connection
           </p>
         </div>
 
@@ -56,12 +56,12 @@ const Benefits: React.FC = () => {
               >
                 <div className="flex items-start space-x-6">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-green-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <IconComponent className="h-8 w-8 text-white" />
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-montserrat text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors duration-300">
+                    <h3 className="font-montserrat text-2xl font-bold text-gray-900 dark:text-white mb-4 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300">
                       {benefit.title}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 font-montserrat leading-relaxed">
@@ -78,20 +78,20 @@ const Benefits: React.FC = () => {
         <div className="mt-16 text-center">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">98%</div>
-              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Patient Satisfaction</div>
+              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">50+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Countries Served</div>
             </div>
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
               <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">24/7</div>
-              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Support Available</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Customer Support</div>
             </div>
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">5,000+</div>
-              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Verified Providers</div>
+              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">10K+</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Happy Families</div>
             </div>
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg">
-              <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">HIPAA</div>
-              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Compliant & Secure</div>
+              <div className="text-3xl font-bold text-red-600 dark:text-red-400 mb-2">4.8★</div>
+              <div className="text-sm text-gray-600 dark:text-gray-300 font-montserrat">Average Rating</div>
             </div>
           </div>
         </div>

@@ -22,13 +22,13 @@ const Footer: React.FC = () => {
         {/* CTA Section */}
         <div className="text-center mb-16 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-3xl p-8 border border-blue-500/20">
           <h2 className="font-montserrat text-3xl md:text-4xl font-bold mb-4">
-            Ready to Transform Your Healthcare Experience?
+            Ready to Create Unforgettable Moments?
           </h2>
           <p className="text-gray-300 font-montserrat text-lg mb-8 max-w-2xl mx-auto">
-            Join thousands of patients who trust TreatConnect for their healthcare needs. Find providers, book appointments, and take control of your health journey.
+            Join thousands of families who use TreatConnect to surprise their loved ones with delightful dining experiences around the world.
           </p>
           <button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white font-montserrat font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
-            Find Healthcare Providers Now
+            Start Spreading Joy Today
           </button>
         </div>
 
