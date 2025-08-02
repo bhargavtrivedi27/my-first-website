@@ -43,7 +43,7 @@ const EarlyAccessForm: React.FC = () => {
   const submitToGoogleSheets = async (data: FormData): Promise<boolean> => {
     try {
       // Google Apps Script Web App URL - Replace with your actual deployment URL
-      const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx6-w3iub1otokkoTXBEjK_hVkxr5wEIIRWI27KVLqc5OIVxcj78Sy7W1jJgYnKOw3S2A/exec';
+      const GOOGLE_SCRIPT_URL = https://script.google.com/macros/s/AKfycbx6-w3iub1otokkoTXBEjK_hVkxr5wEIIRWI27KVLqc5OIVxcj78Sy7W1jJgYnKOw3S2A/exec;
       
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
